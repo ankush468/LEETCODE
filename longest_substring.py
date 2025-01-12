@@ -29,10 +29,7 @@ class Solution(object):
         length_substring = 1
         string = ''
         for i in range(len(self.s)):
-            temp_list = []
-            temp_list.append(self.s[i])
-            temp_string = self.s[i]
-            temp_length = 1
+            temp_list = [];temp_list.append(self.s[i]);temp_string = self.s[i];temp_length = 1
             for j in range(i+1,len(self.s)):
                 if s[j] in temp_list:
                     temp_list = []
