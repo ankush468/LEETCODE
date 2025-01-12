@@ -25,6 +25,8 @@
 class Solution(object):
     def lengthOfLongestSubstring(self, s):
         self.s = s
+        if self.s == '':
+            return 0
         length_substring = 1
         string = ''
         for i in range(len(self.s)):
@@ -43,6 +45,9 @@ class Solution(object):
                     temp_list.append(self.s[j])
                     temp_length+=1
                     temp_string+=self.s[j]
+            if temp_length > length_substring:
+                length_substring = temp_length
+                string = temp_string
         
         return length_substring
 
@@ -50,7 +55,7 @@ class Solution(object):
 
 
 solution = Solution()
-s = solution.lengthOfLongestSubstring('abcabcbb')
+s = solution.lengthOfLongestSubstring('au')
 print(s)
 
 
