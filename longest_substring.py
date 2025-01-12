@@ -1,4 +1,3 @@
-#!/bin/bash
 # Example 1:
 
 # Input: s = "abcabcbb"

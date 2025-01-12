@@ -1,4 +1,3 @@
-#!/bin/bash
 #find all comination where a+b+c = 0
 
 array = [-1,0,1,2,-1,-4,3]
